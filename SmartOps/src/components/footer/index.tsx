@@ -1,10 +1,10 @@
-import * as S from "./styles";
+import "./styles.css";
 
 const Footer: React.FC = () => {
   return (
-    <S.FooterContainer>
-      <S.FooterText>© 2023 Todos os Direitos Reservados | OpsApp</S.FooterText>
-    </S.FooterContainer>
+    <footer>
+      &copy;Copyright 2024 SmartOps - Todos os direitos reservados
+    </footer>
   );
 };
 

@@ -1,0 +1,139 @@
+.sobre-nos {
+  display: none;
+}
+
+.text-title-services {
+  font-size: 35px;
+  margin: 2rem;
+}
+
+div.polariod-text {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.servicesSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3vw;
+  margin: 0px;
+  height: auto;
+  width: auto;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .sobre-nos {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 150px 0px 150px;
+    color: black;
+    font-size: larger;
+  }
+
+  .sobre-nos h1 {
+    font-size: x-large;
+  }
+
+  .sobre-nos img {
+    border-radius: 15px;
+    margin-top: 30px;
+  }
+
+  .text-title-services {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  div.polariod {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    text-align: center;
+    width: 50%;
+    color: rgb(12, 12, 165);
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 15px;
+  }
+
+  .text-title-services {
+    font-size: 35px;
+    margin: 2rem;
+    margin-top: 5rem;
+  }
+
+  div.polariod-text {
+    text-align: start;
+    padding: 10px 20px;
+  }
+
+  .servicesSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw;
+    margin: 0px;
+    height: auto;
+    width: auto;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sobre-nos {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 150px 0px 150px;
+    color: black;
+    font-size: larger;
+  }
+
+  .sobre-nos h1 {
+    font-size: 50px;
+  }
+
+  .sobre-nos img {
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-left: 350px;
+    width: 50%;
+  }
+
+  .text-title-services {
+    font-size: 50px;
+    margin: 2rem;
+    margin-left: 8%;
+    margin-top: 5rem;
+  }
+
+  div.polariod-text {
+    text-align: start;
+    padding: 10px 20px;
+  }
+
+  .servicesSection h1 {
+    font-size: 35px;
+  }
+
+  .servicesSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw;
+    margin: 0px;
+    height: auto;
+    width: auto;
+    text-align: center;
+  }
+}
