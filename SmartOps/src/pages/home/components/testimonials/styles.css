@@ -1,0 +1,122 @@
+.text-title-feedback {
+  font-size: 35px;
+  margin: 2rem;
+}
+
+.container-feedbacks-cards {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+.feedbacks-cards {
+  display: flex;
+  flex-direction: column;
+  margin: 5vw;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+}
+
+.card h1 {
+  color: blue;
+}
+
+.feedbacksSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3vw;
+  margin: 0px;
+  height: auto;
+  width: auto;
+}
+
+@media screen and (min-width: 900px) {
+  .text-title-feedback {
+    font-size: 35px;
+    margin: 2rem;
+  }
+
+  .container-feedbacks-cards {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 7px;
+  }
+  .feedbacks-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card h1 {
+    color: blue;
+    font-size: 15px;
+  }
+  .card p {
+    font-size: 10px;
+  }
+
+  .feedbacksSection {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    height: auto;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .text-title-feedback {
+    font-size: 50px;
+    margin: 2rem;
+  }
+
+  .container-feedbacks-cards {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 7px;
+  }
+  .feedbacks-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card h1 {
+    color: blue;
+    font-size: 25px;
+  }
+  .card p {
+    font-size: 20px;
+  }
+
+  .feedbacksSection {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    height: auto;
+    width: auto;
+  }
+
+  .feedbacks-cards p {
+    font-size: 20px;
+  }
+
+  .feedbacks-cards img {
+    width: 30%;
+  }
+}

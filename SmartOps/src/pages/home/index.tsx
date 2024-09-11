@@ -6,6 +6,7 @@ import OpsBot from "../../assets/OpsBot-LadingPage.svg";
 import Caps from "../../assets/CAPS-LadingPage.svg";
 
 import "./styles.css";
+import Feedbacks from "./components/testimonials";
 
 const Home: React.FC = () => {
   return (
@@ -62,6 +63,7 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
+      <Feedbacks />
       <Footer />
     </>
   );

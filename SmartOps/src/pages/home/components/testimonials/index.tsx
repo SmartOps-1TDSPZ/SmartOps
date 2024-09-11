@@ -1,50 +1,64 @@
-import * as S from "./styles";
+import "./styles.css";
 
 import Aspas from "../../../../assets/Aspas-LadingPage.svg";
 import Profile from "../../../../assets/ProfileModel-LadingPage.svg";
 
-const feedbacks = [
-  {
-    id: 1,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    name: "Pedro Silva",
-    location: "New York, NY",
-  },
-  {
-    id: 2,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    name: "Marina Silva",
-    location: "Rio de Janeiro, RJ",
-  },
-  {
-    id: 3,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    name: "Rafael Bezerra",
-    location: "Santa Cruz, CA",
-  },
-];
-
 const Feedbacks: React.FC = () => {
   return (
     <>
-      <S.FeedbackTitle>FeedBacks dos clientes</S.FeedbackTitle>
-      <S.FeedbackSection>
-        {feedbacks.map((feedback) => (
-          <S.ContainerFeedbackCard key={feedback.id}>
-            <S.FeedbackCard>
-              <S.CardImage src={Aspas} alt="Quote" />
-              <S.CardText>{feedback.text}</S.CardText>
-              <S.CardProfile>
-                <S.ProfileImage src={Profile} alt="Profile" />
-                <S.ProfileDetails>
-                  <S.ProfileName>{feedback.name}</S.ProfileName>
-                  <S.ProfileLocation>{feedback.location}</S.ProfileLocation>
-                </S.ProfileDetails>
-              </S.CardProfile>
-            </S.FeedbackCard>
-          </S.ContainerFeedbackCard>
-        ))}
-      </S.FeedbackSection>
+      <h1 className="text-title-feedback">FeedBacks dos clientes</h1>
+      <section className="feedbacksSection">
+        <div className="container-feedbacks-cards">
+          <div className="feedbacks-cards">
+            <img src={Aspas} alt="" style={{ width: "10%" }} />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div className="card">
+              <img src={Profile} alt="" />
+              <div style={{ marginLeft: "5vw" }}>
+                <h1>Pedro Silva</h1>
+                <p>New York, NY</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="container-feedbacks-cards">
+          <div className="feedbacks-cards">
+            <img src={Aspas} style={{ width: "10%" }} />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div className="card">
+              <img src={Profile} alt="" />
+              <div style={{ marginLeft: "5vw" }}>
+                <h1>Marina Silva</h1>
+                <p>Rio de Janeiro, RJ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="container-feedbacks-cards">
+          <div className="feedbacks-cards">
+            <img src={Aspas} alt="" style={{ width: "10%" }} />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div className="card">
+              <img src={Profile} alt="" />
+              <div style={{ marginLeft: "5vw" }}>
+                <h1>Rafael Bezerra</h1>
+                <p>Santa Cruz, CA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
