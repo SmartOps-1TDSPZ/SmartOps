@@ -7,6 +7,34 @@ import Caps from "../../assets/CAPS-LadingPage.svg";
 
 import "./styles.css";
 import Feedbacks from "./components/testimonials";
+import Faq from "../../components/faq";
+
+const faqs = [
+  {
+    question: "HOW OFTEN SHOULD I GET AN OIL CHANGE?",
+    answer: "Every 5,000 miles or as recommended by the manufacturer.",
+  },
+  {
+    question: "WHEN SHOULD I CHECK FLUID LEVELS?",
+    answer: "Check every month to ensure optimal performance.",
+  },
+  {
+    question: "WHEN SHOULD I CHANGE THE OIL?",
+    answer: "Typically every 5,000 miles or as directed.",
+  },
+  {
+    question: "WHEN SHOULD I REPLACE MY BRAKE PADS?",
+    answer: "Brake pads should be replaced every 25,000 to 70,000 miles.",
+  },
+  {
+    question: "WHEN SHOULD I REPLACE BATTERY?",
+    answer: "Usually every 3-5 years or as it starts to fail.",
+  },
+  {
+    question: "WHEN SHOULD I GET A TIRE ROTATION?",
+    answer: "Rotate your tires every 6,000 to 8,000 miles.",
+  },
+];
 
 const Home: React.FC = () => {
   return (
@@ -64,6 +92,7 @@ const Home: React.FC = () => {
         </div>
       </section>
       <Feedbacks />
+      <Faq faqs={faqs} />
       <Footer />
     </>
   );
