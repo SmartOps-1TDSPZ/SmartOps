@@ -1,0 +1,44 @@
+/* Estilo base para os botões */
+.button {
+  font-size: 16px;
+  border-radius: 0;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* Tamanhos para os botões */
+.button.small {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.button.medium {
+  font-size: 16px;
+}
+
+.button.large {
+  font-size: 20px;
+}
+
+/* Estilos para o botão primário (fundo azul por padrão) */
+.button.primary {
+  background-color: #3498db;
+  color: white;
+  border: none;
+}
+
+.button.primary:hover {
+  background-color: #2980b9;
+}
+
+/* Estilos para o botão outline (borda azul por padrão) */
+.button.outline {
+  background-color: transparent;
+  color: #0000ff;
+  border: 2px solid #0000ff;
+}
+
+.button.outline:hover {
+  background-color: #f2f2f2;
+}
