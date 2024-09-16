@@ -1,0 +1,138 @@
+.sectionBlue {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #397eaf;
+  color: white;
+  padding: 15vw;
+  margin: 0px;
+  height: auto;
+  width: auto;
+  text-align: center;
+}
+.sectionBlue img {
+  width: 30%;
+}
+
+.sectionBlue h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1;
+}
+
+.sectionBlue p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+@media (max-width: 576px) {
+  .sectionBlue {
+    display: flex;
+    flex-direction: column;
+    background-color: #397eaf;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    padding: 5vw;
+    height: auto;
+    width: auto;
+    text-align: center;
+    margin-top: -200px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sectionBlue {
+    display: flex;
+    flex-direction: column;
+    background-color: #397eaf;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    padding: 5vw;
+    height: auto;
+    width: auto;
+    text-align: center;
+    margin-top: -270px;
+    margin-bottom: 20px;
+  }
+  .sectionBlue img {
+    width: 10%;
+  }
+
+  .sectionBlue h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1;
+  }
+
+  .sectionBlue p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 5px 150px 40px 150px;
+    text-align: start;
+  }
+}
+
+@media (min-width: 900px) {
+  .sectionBlue {
+    display: flex;
+    flex-direction: row;
+    background-color: #397eaf;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 3vw;
+    margin: 0px;
+    height: auto;
+    width: auto;
+    margin-top: -289px;
+  }
+  .sectionBlue img {
+    width: 20%;
+  }
+
+  .sectionBlue h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    margin: 5px 20px 15px 15px;
+  }
+
+  .sectionBlue p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .sectionBlue-components {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+  }
+  .sectionBlue-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sectionBlue {
+    display: flex;
+    flex-direction: row;
+    background-color: #397eaf;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 3vw;
+    margin-top: -242px;
+    margin-bottom: 10px;
+    height: auto;
+    width: auto;
+  }
+}
