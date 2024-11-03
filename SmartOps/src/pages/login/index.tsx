@@ -18,7 +18,9 @@ const Login: React.FC = () => {
     try {
       const result = await loginUser(email, password);
       console.log("Login realizado com sucesso:", result);
-    
+    } catch (error) {
+      console.error("Erro no login:", error);
+    }
   };
 
   return (
