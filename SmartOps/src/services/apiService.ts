@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8081/api/rest";
+const API_URL = "http://localhost:8080/api/rest";
 
 // Login
 export const loginUser = async (email: string, password: string) => {
