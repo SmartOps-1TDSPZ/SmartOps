@@ -39,7 +39,7 @@ const Register: React.FC = () => {
           aria-labelledby="register-title"
         >
           <h2 className="register-title">Cadastro</h2>
-          <form onSubmit>
+          <form onSubmit={handleRegisterSubmit}>
             <div className="input-group">
               <input
                 type="text"
