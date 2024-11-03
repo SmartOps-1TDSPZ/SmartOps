@@ -1,0 +1,80 @@
+.integrantes-page {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.integrantes-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.integrantes-title {
+  margin-top: 10px;
+}
+
+.integrantes-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.integrantes-column {
+  flex: 1;
+  max-width: 300px;
+  margin: 20px;
+}
+
+.integrantes-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  text-align: center;
+}
+
+.integrantes-card:hover {
+  transform: scale(1.05);
+}
+
+.integrantes-image {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.integrantes-container {
+  padding: 15px;
+}
+
+.integrantes-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.integrantes-rm {
+  color: #007bff;
+  font-size: 14px;
+}
+
+.integrantes-button {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.integrantes-button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.integrantes-button:hover {
+  background-color: #fff;
+}
