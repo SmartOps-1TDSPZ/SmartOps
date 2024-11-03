@@ -1,0 +1,267 @@
+.blue-circle {
+  position: absolute;
+  width: 1000px;
+  margin-left: -500px;
+  margin-top: -160px;
+  z-index: -1;
+}
+
+.smart-ops {
+  position: absolute;
+  margin-top: 20px;
+  left: 46%;
+  transform: translateX(-50%);
+}
+
+.login-title {
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+  color: black;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.car {
+  position: absolute;
+  margin-top: 220px;
+  margin-left: 50px;
+  width: 350px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 10px;
+  z-index: 9999;
+}
+
+.login-box {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.input-group {
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+.forgot-password {
+  display: flex;
+  justify-content: end;
+  color: #007bff;
+  font-size: small;
+}
+
+.forgot-password a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: 2px solid #007bff;
+}
+
+.align-buttom {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.align-socials {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  color: #fff;
+  background-color: #007bff;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+}
+
+.links {
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+hr {
+  margin: 0 10px;
+  height: 1px;
+  flex: 1;
+  background: #333;
+  border: none;
+}
+
+.or-two {
+  height: 1px;
+  background: #333;
+}
+
+.align-or {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #007bff;
+  margin: 10px 5px;
+}
+
+.socials {
+  text-decoration: none;
+}
+
+/* Media Queries */
+
+/* Extra Pequeno (XS) - Telefones Pequenos: Menos de 576px */
+@media (max-width: 575.98px) {
+  .login-box {
+    max-width: 90%;
+  }
+
+  .blue-circle {
+    display: none;
+  }
+
+  .smart-ops {
+    width: 34%;
+    margin-top: 5%;
+  }
+
+  .car {
+    display: none;
+  }
+}
+
+/* Pequeno (SM) - Telefones Médios e Tablets Pequenos: 576px a 767px */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .login-box {
+    max-width: 80%;
+  }
+
+  .blue-circle {
+    display: none;
+  }
+
+  .smart-ops {
+    width: 40%;
+    margin-top: 1%;
+  }
+
+  .car {
+    display: none;
+  }
+}
+
+/* Médio (MD) - Tablets e Laptops: 768px a 991px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .login-box {
+    margin-top: 50px;
+  }
+
+  .blue-circle {
+    display: none;
+  }
+
+  .smart-ops {
+    width: 30%;
+    margin-top: 3%;
+  }
+
+  .car {
+    display: none;
+  }
+}
+
+/* Grande (LG) - Desktops Médios: 992px a 1199px */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .blue-circle {
+    width: 1399px;
+    height: 1113px;
+    margin-top: -21px;
+    margin-left: -600px;
+  }
+
+  .container {
+    margin-left: 200px;
+  }
+
+  .smart-ops {
+    width: 30%;
+    margin-left: -329px;
+    margin-top: 20px;
+  }
+
+  .car {
+    width: 300px;
+    margin-top: 280px;
+    margin-left: 10px;
+  }
+}
+
+/* Extra Grande (XL) - Desktops Grandes: 1200px ou mais */
+@media (min-width: 1200px) {
+  .blue-circle {
+    width: 2100px;
+    height: 1090px;
+    margin-top: -40px;
+    margin-left: -600px;
+  }
+
+  .container {
+    margin-left: 200px;
+  }
+
+  .smart-ops {
+    position: absolute;
+    width: 20%;
+    margin-left: -334px;
+    margin-top: 20px;
+  }
+
+  .car {
+    width: 500px;
+    margin-top: 280px;
+    margin-left: 10px;
+  }
+}
