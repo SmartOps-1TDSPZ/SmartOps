@@ -5,8 +5,25 @@ import { Link } from "react-router-dom";
 import Car from "../../assets/car.svg";
 import Ellipse from "../../assets/Ellipse 5.svg";
 import Logo from "../../assets/Logo-white-LadingPage.svg";
+import { registerUser } from "../../services/apiService";
 
 const Register: React.FC = () => {
+  const handleRegisterSubmit = async (event: React.FormEvent) => {
+    event.preventDefault();
+    const form = event.target as HTMLFormElement;
+    const name = (form.elements.namedItem("name") as HTMLInputElement).value;
+    const email = (form.elements.namedItem("email") as HTMLInputElement).value;
+    const password = (form.elements.namedItem("password") as HTMLInputElement)
+      .value;
+
+    try {
+      const result = await registerUser(name, email, password);
+      console.log("Cadastro realizado com sucesso:", result);
+    } catch (error) {
+      console.error("Erro no cadastro:", error);
+    }
+  };
+
   return (
     <div className="allign-all">
       <header>
@@ -22,7 +39,7 @@ const Register: React.FC = () => {
           aria-labelledby="register-title"
         >
           <h2 className="register-title">Cadastro</h2>
-          <form onSubmit={handleRegisterSubmit}>
+          <form onSubmit>
             <div className="input-group">
               <input
                 type="text"
