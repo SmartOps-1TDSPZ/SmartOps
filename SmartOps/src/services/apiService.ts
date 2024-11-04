@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8080/SprintDefinitiva_war/api/rest/";
+const API_URL = "http://localhost:8080/SprintDefinitiva_war/api/rest";
 
 // Login
 export const loginUser = async (email: string, password: string) => {
