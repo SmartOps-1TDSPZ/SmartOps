@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8080/api/rest";
+const API_URL = "http://localhost:8080/SprintDefinitiva_war/api/rest/";
 
 // Login
 export const loginUser = async (email: string, password: string) => {
@@ -27,7 +27,9 @@ export const loginUser = async (email: string, password: string) => {
 export const registerUser = async (
   name: string,
   email: string,
-  password: string
+  password: string,
+  numero: string,
+  endereco: string
 ) => {
   try {
     const response = await fetch(`${API_URL}/clientes`, {
@@ -35,7 +37,13 @@ export const registerUser = async (
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ nome: name, email: email, senha: password }),
+      body: JSON.stringify({
+        nome: name,
+        email: email,
+        senha: password,
+        numero: numero,
+        endereco: endereco,
+      }),
     });
 
     if (!response.ok) {
