@@ -1,45 +1,19 @@
-import React from "react";
 import "./styles.css";
 
-import { Link } from "react-router-dom";
-import Car from "../../assets/car.svg";
 import Ellipse from "../../assets/Ellipse 5.svg";
 import Logo from "../../assets/Logo-white-LadingPage.svg";
-import { registerUser } from "../../services/apiService";
+import Car from "../../assets/car.svg";
+import Google from "../../assets/IconGoogle.svg";
+import Facebook from "../../assets/IconFacebook.svg";
+import { Link } from "react-router-dom";
 
 const Register: React.FC = () => {
-  const handleRegisterSubmit = async (event: React.FormEvent) => {
-    event.preventDefault();
-    const form = event.target as HTMLFormElement;
-    const name = (form.elements.namedItem("name") as HTMLInputElement).value;
-    const email = (form.elements.namedItem("email") as HTMLInputElement).value;
-    const password = (form.elements.namedItem("password") as HTMLInputElement)
-      .value;
-    const numero = (form.elements.namedItem("numero") as HTMLInputElement)
-      .value;
-    const endereco = (form.elements.namedItem("endereco") as HTMLInputElement)
-      .value;
-
-    try {
-      const result = await registerUser(
-        name,
-        email,
-        password,
-        numero,
-        endereco
-      );
-      console.log("Cadastro realizado com sucesso:", result);
-    } catch (error) {
-      console.error("Erro no cadastro:", error);
-    }
-  };
-
   return (
     <div className="allign-all">
       <header>
         <img src={Ellipse} alt="Google logo" className="blue-circle" />
         <img src={Logo} alt="Logo Escrito SmartOps" className="smart-ops" />
-        <img src={Car} alt="Imagem de um carro" className="car" />
+        <img src={Car} alt="Desenho de uma mulher" className="woman" />
       </header>
 
       <div className="container">
@@ -49,7 +23,7 @@ const Register: React.FC = () => {
           aria-labelledby="register-title"
         >
           <h2 className="register-title">Cadastro</h2>
-          <form onSubmit={handleRegisterSubmit}>
+          <form action="#">
             <div className="input-group">
               <input
                 type="text"
@@ -80,29 +54,36 @@ const Register: React.FC = () => {
                 aria-required="true"
               />
             </div>
-            <div className="input-group">
-              <input
-                type="text"
-                id="numero"
-                name="numero"
-                required
-                placeholder="Informe seu número"
-                aria-required="true"
-              />
+            <div className="align-buttom">
+              <button type="submit" className="btn-continue">
+                Continuar
+              </button>
+              <div className="align-or">
+                <hr aria-hidden="true" />
+                <span>Ou</span>
+                <hr className="or-two" aria-hidden="true" />
+              </div>
+              <div className="align-socials">
+                <a
+                  href="https://www.google.com.br/?hl=pt-BR"
+                  className="socials"
+                  aria-label="Cadastro com Google"
+                >
+                  <img src={Google} alt="Google logo" className="icon-btn" />
+                </a>
+                <a
+                  href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzE2NTEyNDc0LCJjYWxsc2l0ZV9pZCI6MjY5NTQ4NDUzMDcyMDk1MX0%3D"
+                  className="socials"
+                  aria-label="Cadastro com Facebook"
+                >
+                  <img
+                    src={Facebook}
+                    alt="Facebook logo"
+                    className="icon-btn"
+                  />
+                </a>
+              </div>
             </div>
-            <div className="input-group">
-              <input
-                type="text"
-                id="endereco"
-                name="endereco"
-                required
-                placeholder="Informe seu endereço"
-                aria-required="true"
-              />
-            </div>
-            <button type="submit" className="btn-continue">
-              Continuar
-            </button>
           </form>
           <p className="links">
             Já tem cadastro?

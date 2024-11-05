@@ -15,27 +15,27 @@ Para executar este software localmente, você precisará ter o Node.js instalado
 
 1. Clone este repositório em seu ambiente local utilizando o seguinte comando:
 
-```
+
 git clone https://github.com/SmartOps-1TDSPZ/SmartOps.git
-```
+
 
 2. Navegue até o diretório do projeto:
 
-```
+
 cd SmartOps
-```
+
 
 3. Instale as dependências do projeto utilizando npm:
 
-```
+
 npm install
-```
+
 
 4. Após a instalação das dependências, inicie o servidor de desenvolvimento com o seguinte comando:
 
-```
+
 npm run dev
-```
+
 
 Isso iniciará o servidor de desenvolvimento e abrirá automaticamente o aplicativo em seu navegador padrão. Se não abrir automaticamente, você pode acessá-lo manualmente em [http://localhost:3000](http://localhost:3000).
 

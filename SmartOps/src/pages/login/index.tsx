@@ -1,29 +1,13 @@
-import React from "react";
 import "./styles.css";
 
-import { Link } from "react-router-dom";
-import Car from "../../assets/car.svg";
 import Ellipse from "../../assets/Ellipse 5.svg";
 import Logo from "../../assets/Logo-white-LadingPage.svg";
-import { loginUser } from "../../services/apiService";
+import Car from "../../assets/car.svg";
+import Google from "../../assets/IconGoogle.svg";
+import Facebook from "../../assets/IconFacebook.svg";
+import { Link } from "react-router-dom";
 
 const Login: React.FC = () => {
-  const handleLoginSubmit = async (event: React.FormEvent) => {
-    event.preventDefault();
-    const form = event.target as HTMLFormElement;
-    const email = (form.elements.namedItem("email") as HTMLInputElement).value;
-    const password = (form.elements.namedItem("password") as HTMLInputElement)
-      .value;
-
-    try {
-      const result = await loginUser(email, password);
-      console.log("Login realizado com sucesso:", result);
-      window.location.href = "/members";
-    } catch (error) {
-      console.error("Erro no login:", error);
-    }
-  };
-
   return (
     <div className="allign-all">
       <header>
@@ -39,7 +23,7 @@ const Login: React.FC = () => {
           aria-labelledby="login-title"
         >
           <h2 className="login-title">Login</h2>
-          <form onSubmit={handleLoginSubmit}>
+          <form action="#">
             <div className="input-group">
               <input
                 type="email"
@@ -60,9 +44,41 @@ const Login: React.FC = () => {
                 aria-required="true"
               />
             </div>
-            <button type="submit" className="btn-continue">
-              Continuar
-            </button>
+            <div className="forgot-password">
+              <a href="#">
+                <p>Esqueci minha senha</p>
+              </a>
+            </div>
+            <div className="align-buttom">
+              <button type="submit" className="btn-continue">
+                Continuar
+              </button>
+              <div className="align-or">
+                <hr aria-hidden="true" />
+                <span>Ou</span>
+                <hr className="or-two" aria-hidden="true" />
+              </div>
+              <div className="align-socials">
+                <a
+                  href="https://www.google.com.br/?hl=pt-BR"
+                  className="socials"
+                  aria-label="Login com Google"
+                >
+                  <img src={Google} alt="Google logo" className="icon-btn" />
+                </a>
+                <a
+                  href="https://www.facebook.com/login"
+                  className="socials"
+                  aria-label="Login com Facebook"
+                >
+                  <img
+                    src={Facebook}
+                    alt="Facebook logo"
+                    className="icon-btn"
+                  />
+                </a>
+              </div>
+            </div>
           </form>
           <p className="links">
             Ainda não tem conta?

@@ -1,16 +1,16 @@
+import About from "../../assets/aboutUs.svg";
+import Caps from "../../assets/CAPS-LadingPage.svg";
+import OpsBot from "../../assets/OpsBot-LadingPage.svg";
+import Orçamento from "../../assets/Orcamento-LadingPage.svg";
 import Footer from "../../components/footer";
 import SectionBlue from "./components/sectionBlue";
-import About from "../../assets/aboutUs.svg";
-import Orçamento from "../../assets/Orcamento-LadingPage.svg";
-import OpsBot from "../../assets/OpsBot-LadingPage.svg";
-import Caps from "../../assets/CAPS-LadingPage.svg";
 
-import "./styles.css";
-import Feedbacks from "./components/testimonials";
-import Faq from "../../components/faq";
-import LogoLanding from "../../assets/Logo-LadingPage.svg";
-import SimpleButton from "../../components/simpleButton";
 import { Link } from "react-router-dom";
+import LogoLanding from "../../assets/Logo-LadingPage.svg";
+import Faq from "../../components/faq";
+import SimpleButton from "../../components/simpleButton";
+import Feedbacks from "./components/testimonials";
+import "./styles.css";
 
 const faqs = [
   {
