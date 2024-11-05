@@ -18,6 +18,7 @@ const Login: React.FC = () => {
     try {
       const result = await loginUser(email, password);
       console.log("Login realizado com sucesso:", result);
+    //  window.location.href = "/members";
     } catch (error) {
       console.error("Erro no login:", error);
     }

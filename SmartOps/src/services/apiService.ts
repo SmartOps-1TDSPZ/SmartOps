@@ -3,22 +3,26 @@ const API_URL = "http://localhost:8080/SprintDefinitiva_war/api/rest";
 // Login
 export const loginUser = async (email: string, password: string) => {
   try {
-    const response = await fetch(`${API_URL}/clientes/login`, {
+    console.log();
+    const response = await fetch(`${API_URL}/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ email, senha: password }),
+      body: JSON.stringify({"email": email,"senha": password }),
     });
+
 
     if (!response.ok) {
       throw new Error("Erro no login");
     }
-
     const result = await response.json();
+
+    console.log(result);
+    
     return result;
   } catch (error) {
-    console.error("Erro no login:", error);
+    console.error("Erro:", error);
     throw error;
   }
 };
